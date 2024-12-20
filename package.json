@@ -4,22 +4,32 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "type-check": "vue-tsc --noEmit",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.1",
+    "@popperjs/core": "^2.11.8",
+    "apexcharts": "^4.2.0",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
     "pinia": "^2.3.0",
     "sweetalert2": "^11.15.0",
+    "swiper": "^11.1.15",
     "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
     "vue-the-mask": "^0.11.1",
     "vue3-apexcharts": "^1.8.0"
   },
   "devDependencies": {
+    "@types/node": "^22.10.2",
     "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "^5.7.2",
     "vite": "^6.0.1",
-    "vite-plugin-vue-devtools": "^7.6.5"
+    "vite-plugin-vue-devtools": "^7.6.5",
+    "vue-tsc": "^2.1.10"
   }
 }
